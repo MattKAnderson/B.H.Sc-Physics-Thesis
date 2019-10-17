@@ -11,10 +11,7 @@ A solution to this is to use a monte carlo method to approximate the evaluation 
 
 **Some useful explanation of how the model was implemented**
 
-
-
-
-
+Please see the ring-labelling.png image above to see how I index carbon atoms in a ring. I used a class called HRing to represent a single ring. Each of these rings 'share' the atoms in pos 1 & 6 and 2 & 5 between the previous and current ring in the chain. This was implemented by constructing an HRing by giving the constructor the positions of atoms 1 and 2 from the previous ring as well as the vector that defines the plane of the new ring. To facilitate the construction (and updating) of the rings, another class called Vector3D was written. Vector3D represents a vector (x, y, z) and defines operators and functions to do vector operations such as cross product, normalization, and rotation about an axis. Then the whole simulation was done through a class called MCsim which used an array of HRings to represent the chain and contains functions to perform the simulation for a specified number of interations and report on the results of running the simulation. 
 
 
 Link to thesis supervisor page: https://www.physics.mcmaster.ca/component/comprofiler/userprofile/shi.html?Itemid=351
