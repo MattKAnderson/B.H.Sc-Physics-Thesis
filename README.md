@@ -15,3 +15,5 @@ Please see the ring-labelling.png image above to see how I index carbon atoms in
 
 
 Link to thesis supervisor page: https://www.physics.mcmaster.ca/component/comprofiler/userprofile/shi.html?Itemid=351
+
+-Note to self add some photos
