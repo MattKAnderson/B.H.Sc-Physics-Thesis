@@ -23,7 +23,7 @@ By computing quantities of interest (such as end-to-end distance of the helicene
 Use this image as reference for the description below.
 
 <p align="center" >
-  <img src="ring-labelling.png" width="500" />
+  <img src="images/ring-labelling.png" width="500" />
 </ p>
 
 Helicenes are chains of carbon atom rings. As can be seen in the diagram above, the rings 'share' 2 atoms with each adjacent
@@ -49,7 +49,29 @@ torstion in the model, the model cannot produce helical structures for large num
 small numbers of rings).  
 
 ## A few results
+Images here were produced by [Speck](http://wwwtyro.github.io/speck/) using the xyz file of atom positions output by the simulation code. It was assumed after many steps that the current conformation would be an equilibrium conformation for the molecule.
 
+##### 6 ring helicene showing overlaped ring-gap
+<p align="center" >
+  <img src="images/EquilibriumConformation.png" width="350" />
+</ p>
+
+##### 6 ring helicene produces both left & right handed equilibrium structures
+It should be equally likely, starting from a random conformation to end up in either the left-handed or right-handed
+equilibrium state. Additionally, given enough simulation time, the right-handed state should be able to transition to the 
+left-handed state and vice-versa.
+
+The model achieved this for a 6 ring chain
+<p align="center" >
+  <img src="images/LeftAndRight.png" width="350" />
+</ p>
+
+##### model fails for larger chains
+I hope this image helps to visually demonstrate why torsion is important for producing a helical structure. The rings need to be able to twist outwards as they bend inward so that they can remain relatively 'horizontal' to one another.
+
+<p align="center" >
+  <img src="images/ErrorWhenLong.png" width="450" />
+</ p>
 
 ## Link to thesis supervisor
 https://www.physics.mcmaster.ca/component/comprofiler/userprofile/shi.html?Itemid=351
