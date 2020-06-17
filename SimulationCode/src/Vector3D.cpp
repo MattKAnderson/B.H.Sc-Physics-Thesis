@@ -109,7 +109,7 @@ Vector3D Vector3D::operator%(const Vector3D &v)
 
 double Vector3D::operator*(const Vector3D &v)
 {
-	return (x*v.x, y*v.y, z*v.z);
+	return (x*v.x + y*v.y + z*v.z);
 }
 
 Vector3D Vector3D::operator*(double s)

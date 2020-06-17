@@ -14,6 +14,7 @@ int main()
 	double temp = 1.0;
 	double alpha = 3.5;
 	double max_angle_change = 0.30;  //in radians
+	
 	//sampling parameters
 	int Nwarm = 10000;
 	int Nstep = 10;
@@ -23,7 +24,7 @@ int main()
 	vector<Vector3D> atomPositions(6 * chainSize);
 
 	//file output name
-	string positionfile = "C:/Users/matta/Documents/sim_files/atomPositions.txt";
+	string positionfile = "../results/atomPositions.txt";
 
 	//simulation
 	MCsim sim(alpha, temp, chainSize, max_angle_change);
@@ -38,6 +39,7 @@ int main()
 		cout << "Angle " << i << " : " << sim.final_angles()[i] << std::endl;
 	}
 	cin.get();
+	
 	//output to file
 	conformation_to_file(atomPositions, positionfile);
 }

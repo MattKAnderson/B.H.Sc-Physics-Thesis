@@ -7,4 +7,4 @@
 #include "Vector3D.h"
 
 
-void conformation_to_file(std::vector <Vector3D> positions, std::string filelocation);
+void conformation_to_file(std::vector<Vector3D> positions, std::string filelocation);
